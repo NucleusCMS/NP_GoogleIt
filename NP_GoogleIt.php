@@ -35,8 +35,9 @@ class NP_GoogleIt extends NucleusPlugin {
     return array('PreItem');
   }
 
-  function event_PreItem($data) {
-    $this->currentItem = &$data["item"];
+  function event_PreItem(&$data) {
+  	if(!isset($data['item'])) return;
+    $this->currentItem = $data['item'];
 
     // google
     $this->currentItem->body =
