@@ -9,10 +9,10 @@ class NP_GoogleIt extends NucleusPlugin {
   } 
   function getURL()
   {
-    return 'http://xx.nakahara21.net/';
+    return 'https://github.com/NucleusCMS/NP_GoogleIt';
   }
   function getVersion() {
-    return '0.51';
+    return '0.6';
   }
   function getDescription() {
     return 'Google it! usage:[[keyword]] or search by wikipedia usage: {{keyword}}';
